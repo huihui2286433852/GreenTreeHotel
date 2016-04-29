@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/title_background">
+
+        <ImageView
+            android:id="@+id/main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/menu_list_normal" />
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hoteltitle_gelin"
+            android:textColor="@color/color_green"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/main_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/login_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_view_page"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"></android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/group_1"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/selector_navigation_img"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/radio_2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/selector_navigation_img"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/radio_3"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/selector_navigation_img"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/radio_4"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/selector_navigation_img"
+                android:button="@null" />
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/radio_5"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/selector_navigation_img"
+                android:button="@null" />
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/radio_6"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/selector_navigation_img"
+                android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_green">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_btn_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/hotelselet" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/hotelcollect" />
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/main_fragment_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>
